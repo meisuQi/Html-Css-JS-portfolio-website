@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    color:#ededed;
+}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    position: relative;
+    font-size:25px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 600;
+    opacity:0 ;
+    transition: opacity 2s ease-in-out;
+}
+.logo.loaded{
+    opacity: 0.8;
+}
+.navbar a{
+    font-size:18px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    color:#db799e;
+}
+
+.home{
+ height: 100vh;
+ background: url('wallhaven-858lz1.png') no-repeat;
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ align-items: center;
+ padding: 0 10%;   
+}
+.home-content{
+    max-width:600px ;
+}
+.home-content h1{
+    position: relative;
+    font-size:56px;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity:0 ;
+    transition: opacity 3s ease-in-out;
+}
+.home-content h1.loaded{
+    opacity: 0.8;
+}
+.home-content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700px; 
+    color:#db799e;
+    opacity:0 ;
+    transition: opacity 5s ease-in-out;
+}
+.home-content h3.loaded{
+    opacity: 0.8;
+}
+.home-content p{
+    position: relative;
+    font-size:16px;
+    margin: 20px 0 40px;
+    opacity:0 ;
+    transition: opacity 6s ease-in-out;
+}
+.home-content p.loaded{
+    opacity: 0.8;
+}
+.btn-box{
+    position: relative;
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;  
+    transform: .5s;
+    opacity: 0;
+    transition: 8s ease-in-out;
+ }
+ .btn-box.loaded{
+    opacity: 0.8;
+}
+ .btn-box a{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #db799e;
+    border:2px solid #db799e;
+    border-radius:8px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    overflow: hidden;
+    
+ }
+ 
+ .btn-box a:hover{
+    color:#f991e2;
+    background:transparent;
+    transition: 1s ease-in-out;
+    border-color: #f991e2;
+    
+ }
+ .home-sic{
+    position:absolute;
+    bottom:40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    opacity:0 ;
+    transition: opacity 9s ease-in-out;
+ }
+ .home-sic.loaded{
+    opacity: 0.8;
+}
+ .home-sic a{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height: 40px;
+    background: transparent;
+    border:2px solid #db799e;
+    border-radius: 50%;
+    font-size:20px;
+    color:#db799e;
+    text-decoration: none;
+    overflow: hidden;
+ }
+
+ .home-sic a:hover{
+    background: #db799e;
+    transition: .5s ease-in-out;
+    color:#ededed;
+    opacity: 0.8;
+    border:2px solid #f991e2;
+ }
+
+ 
